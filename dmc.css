@@ -82,15 +82,63 @@ li {
 .workshop {
   margin: 15px 0;
 }
-.workshop-header {
+.workshop-header, .abstract-header {
   background-color: #b1cff0;
   padding: 10px;
 }
 
-.workshop-header:hover {
+.workshop-header:hover, .abstract-header:hover {
   background-color: #c0deff;
 }
 
 .workshop-description {
   min-height: 400px;
+}
+
+.abstract-item {
+  margin: 10px 0;
+}
+
+.title {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 5px 0;
+
+}
+
+.author {
+  font-size: 20px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.affiliation {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.abstract {
+  min-height: 100px;
+}
+
+table {
+  font-size: 19px;
+  margin: 10px;
+  padding: 10px;
+}
+
+td {
+  padding: 15px;
+  vertical-align: top;
+
+}
+
+.hour {
+  font-weight: bold;
 }

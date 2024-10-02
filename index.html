@@ -12,10 +12,10 @@
       <div class="header">
         <img id="banner" src="./img/banner.png" alt="">
       </div>
-      <div class="tmp " style="height:60px;background-color: #516f90">
-        
+      <div class="tmp hidden" style="height:60px;background-color: #516f90">
+
       </div>
-      <div class="navbar hidden">
+      <div class="navbar ">
 
         <div onclick="activateTab('home', 'nav-home')" id="nav-home" class="tab active">Home</div>
         <div onclick="activateTab('schedule', 'nav-schedule')" id="nav-schedule" class="tab">Schedule</div>
@@ -37,22 +37,92 @@
         <li>Craig Stuart Sapp</li>
         <li>Benjamin Ory</li>
         <li>Jacek Iwaszko</li>
-        
+
         <h2>Contact Information</h2>
         <p>
           <b>The Fryderyk Chopin Institute</b><br>
           Tamka 43, 00-355 Warsaw, Poland<br>
           email: <a href="mailto:dmc@nifc.pl">dmc@nifc.pl</a>
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d152.71139985756477!2d21.02209737479935!3d52.2364376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNIFC!5e0!3m2!1sen!2spl!4v1727862774721!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d610.8475527273804!2d21.021965190268045!3d52.236295670773856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc58b11f2141%3A0x47b3ccddeb2568bb!2sNational%20Institute%20of%20Frederic%20Chopin!5e0!3m2!1sen!2spl!4v1727873314514!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div id="schedule" class="content hidden">
         <h1>Schedule</h1>
-        <p>schedule goes here</p>
+        <div id="schedule-container" class="">
+          <div id="2024-10-23" class="day">
+            <h2>Wednesday, October 23, 2024</h2>
+            <table class="tg">
+              <tbody>
+                <tr>
+                  <td class="hour">10:00</th>
+                  <td class="event">Welcome and Coffee</th>
+                </tr>
+                <tr>
+                  <td class="hour">10:30</td>
+                  <td class="event">
+                    Keynote: <b>Title</b><br>
+                    Craig Stuart Sapp
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hour">11:30</td>
+                  <td class="event">coffee break</td>
+                </tr>
+                <tr>
+                  <td class="hour">12:00</td>
+                  <td class="event">
+                    <b>Chopin Heritage in Open Access</b><br>
+                    Jacek Iwaszko
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hour">12:30</td>
+                  <td class="event">
+                    <b>Polish Music Heritage in Open Access</b><br>
+                    Marcin Konik
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hour">13:00</td>
+                  <td class="event">Lunch break</td>
+                </tr>
+                <tr>
+                  <td class="hour">14:30</td>
+                  <td class="event">Workshop: <b>Introduction to Humdrum with Verovio Humdrum Viewer</b><br>
+                  Craig Stuart Sapp, Jacek Iwaszko
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hour">16:00</td>
+                  <td class="event">coffee break</td>
+                </tr>
+                <tr>
+                  <td class="hour">16:30</td>
+                  <td class="event">Workshop: <b>Google spreadsheets for online metadata access</b><br>
+                  Benjamin Ory, Craig Stuart Sapp, Jacek Iwaszko
+                  </td>
+                </tr>
+                <tr>
+                  <td class="hour">19:00</td>
+                  <td class="event">Conference Dinner</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="2024-10-24" class="day">
+            <h2>Thursday, October 24, 2024</h2>
+          </div>
+          <div id="2024-10-25" class="day">
+            <h2>Friday, October 25, 2024</h2>
+          </div>
+
+        </div>
       </div>
       <div id="abstracts" class="content hidden">
         <h1>Abstracts</h1>
-        <p>abstracts go here</p>
+        <div id="abstract-container" class="">
+
+        </div>
       </div>
       <div id="workshops" class="content hidden">
         <h1>Workshops</h1>
@@ -106,6 +176,8 @@
 
 
     </div>
+    <div id="datastore" class="hidden">
 
+    </div>
   </body>
 </html>

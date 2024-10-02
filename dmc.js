@@ -1,3 +1,40 @@
+//get index of presentations:
+let presentations;
+let workshops;
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "https://raw.githubusercontent.com/jacekiwaszko1/dmc/refs/heads/main/presentations.json");
+xhr.send();
+xhr.responseType = "json";
+xhr.onload = () => {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    const data = xhr.response;
+    console.log(data);
+    presentations = data;
+    createAbstractList(presentations);
+    //createScheadule(presentations);
+    //document.getElementById('datastore').innerHTML = JSON.stringify(presentations);
+  } else {
+    console.log(`Error: ${xhr.status}`);
+  }
+};
+
+const xhr2 = new XMLHttpRequest();
+xhr2.open("GET", "https://raw.githubusercontent.com/jacekiwaszko1/dmc/refs/heads/main/workshops.json");
+xhr2.send();
+xhr2.responseType = "json";
+xhr2.onload = () => {
+  if (xhr2.readyState == 4 && xhr2.status == 200) {
+    const data = xhr2.response;
+    console.log(data);
+    workshops = data;
+    //document.getElementById('datastore').innerHTML = JSON.stringify(presentations);
+  } else {
+    console.log(`Error: ${xhr2.status}`);
+  }
+};
+
+
+
 function activateTab(tabname, navtab, from) {
   console.log(tabname);
   var tabs = document.getElementsByClassName('content');
@@ -35,4 +72,102 @@ function activateWorkshop(wid, wcontent) {
     wdescription.classList.add('hidden');
   }
 
+}
+
+function createAbstractList(list) {
+  let container = document.getElementById("abstract-container");
+  const options = {
+  weekday: 'long',
+  year: 'numeric',
+  day: 'numeric',
+  month: 'long',
+};
+  console.log("got here");
+  for (var i = 0; i < list.length; i++) {
+    let id = "abs" + String(i);
+    //console.log(id);
+    let item = document.createElement("div");
+    item.classList.add("abstract-item");
+    let abstractHead = document.createElement("div");
+    abstractHead.classList.add("abstract-header");
+    func = "toggleAbstract(\"" + id + "\")";
+    abstractHead.setAttribute("onclick", func);
+    let title = document.createElement("p");
+    title.classList.add('title');
+    title.innerHTML = list[i].title;
+    let author = document.createElement("p");
+    author.classList.add('author');
+    author.innerHTML = list[i].presenter;
+
+    let affiliation = document.createElement("p");
+    affiliation.classList.add("affiliation");
+    affiliation.innerHTML = list[i].affiliation;
+    isodate = new Date(list[i].date);
+    //console.log(date);
+    dateString = isodate.toLocaleDateString("en-US", options);
+
+    let date = document.createElement("p");
+    date.classList.add("date");
+    date.innerHTML = dateString + ", " + list[i].time
+
+    abstractHead.appendChild(title);
+    abstractHead.appendChild(author);
+    abstractHead.appendChild(affiliation);
+    abstractHead.appendChild(date);
+
+    let abstract = document.createElement("div");
+    abstract.setAttribute("id", id);
+    abstract.classList.add('abstract');
+    abstract.classList.add('hidden');
+
+    let paragraphs = list[i].abstract.split("\\n");
+    for (var j = 0; j < paragraphs.length; j++) {
+      let abstractP = document.createElement("p");
+      abstractP.classList.add("abstract-content");
+      abstractP.innerHTML = paragraphs[j];
+      abstract.appendChild(abstractP);
+    }
+
+
+
+
+
+    item.appendChild(abstractHead);
+    item.appendChild(abstract);
+    container.appendChild(item);
+  }
+}
+
+function toggleAbstract(id) {
+  console.log(id);
+  elem = document.getElementById(id);
+  if (elem.classList.contains("hidden")) {
+    elem.classList.remove("hidden");
+  } else {
+    elem.classList.add("hidden");
+  }
+}
+
+function createScheadule(list) {
+  let dates = new Set();
+  for (var i = 0; i < list.length; i++) {
+    dates.add(list[i].date);
+  }
+  let container = document.getElementById("schedule-container");
+  for (d of dates) {
+    let day = document.createElement("div");
+    day.setAttribute("id", d);
+    day.classList.add("day");
+    container.appendChild(day);
+  }
+
+  for (p of list) {
+    let parent = document.getElementById(p.date);
+    let hour = document.createElement("p");
+    hour.classList.add("hour");
+    hour.innerHTML = p.time;
+    parent.appendChild(hour);
+  }
+
+  //console.log(dates);
 }
