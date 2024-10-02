@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <script src="dmc.js"></script>
+  <link rel="stylesheet" href="dmc.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Musicology Conference</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img id="banner" src="./img/banner.png" alt="">
+      </div>
+      <div class="navbar">
+
+        <div onclick="activateTab('home', 'nav-home')" id="nav-home" class="tab active">Home</div>
+        <div onclick="activateTab('schedule', 'nav-schedule')" id="nav-schedule" class="tab">Schedule</div>
+        <div onclick="activateTab('abstracts', 'nav-abstracts')" id="nav-abstracts" class="tab">Abstracts</div>
+        <div onclick="activateTab('workshops', 'nav-workshops')" id="nav-workshops" class="tab">Workshops</div>
+      </div>
+      <div id="home" class="content">
+        <h1>First International Digital Musicology Conference</h1>
+        <p>description goes here</p>
+      </div>
+      <div id="schedule" class="content hidden">
+        <h1>Schedule</h1>
+        <p>schedule goes here</p>
+      </div>
+      <div id="abstracts" class="content hidden">
+        <h1>Abstracts</h1>
+        <p>abstracts go here</p>
+      </div>
+      <div id="workshops" class="content hidden">
+        <h1>Workshops</h1>
+        <div id="w1" class="workshop">
+          <div onclick="activateWorkshop('w1', 'w1-description')" class="workshop-header">
+            <h2>1. Introduction to Humdrum with Verovio Humdrum Viewer</h2>
+            <h3>Craig Sapp, Jacek Iwaszko</h3>
+          </div>
+          <div id="w1-description" class="workshop-description hidden">
+            <p>description goes here</p>
+          </div>
+        </div>
+        <div id="w2" class="workshop">
+          <div onclick="activateWorkshop('w2', 'w2-description')" class="workshop-header">
+            <h2>2. Google spreadsheets for online metadata access</h2>
+            <h3>Ben Ory, Craig Sapp, Jacek Iwaszko</h3>
+          </div>
+          <div id="w2-description" class="workshop-description hidden">
+            <p>description goes here</p>
+          </div>
+        </div>
+        <div id="w3" class="workshop">
+          <div onclick="activateWorkshop('w3', 'w3-description')" class="workshop-header">
+            <h2>3. Creating websites for digital musicology projects</h2>
+            <h3>Craig Sapp, Ben Ory</h3>
+          </div>
+          <div id="w3-description" class="workshop-description hidden">
+            <p>description goes here</p>
+          </div>
+        </div>
+        <div id="w4" class="workshop">
+          <div onclick="activateWorkshop('w4', 'w4-description')" class="workshop-header">
+            <h2>4. Mapping project</h2>
+            <h3>Ben Ory, Craig Sapp</h3>
+          </div>
+          <div id="w4-description" class="workshop-description hidden">
+            <p>description goes here</p>
+          </div>
+        </div>
+        <div id="w5" class="workshop">
+          <div onclick="activateWorkshop('w5', 'w5-description')" class="workshop-header">
+            <h2>5. Advanced Humdrum: Using terminal tools</h2>
+            <h3>Craig Sapp, Jacek Iwaszko</h3>
+          </div>
+          <div id="w5-description" class="workshop-description hidden">
+            <p>description goes here</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
