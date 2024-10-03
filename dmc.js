@@ -44,8 +44,7 @@ if (/#/.test(originUrl)) {
   originUrl = originUrl.replace(/#.*$/, '');
   console.log(originUrl);
 }
-//onload = (event) => {
-  //if (/#/.test(originUrl)) {
+onload = (event) => {
     if (target == "abstracts" || target == "schedule" || target == "workshops") {
       let navtabname = "nav-" + target;
       let test = document.getElementById(target);
@@ -53,8 +52,7 @@ if (/#/.test(originUrl)) {
     } else {
       activateTab("home", "nav-home")
     }
-  //}
-//};
+};
 
 //console.log(originUrl);
 
