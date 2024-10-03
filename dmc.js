@@ -34,10 +34,15 @@ xhr2.onload = () => {
   }
 };
 
+var originUrl = window.location.href;
+//console.log(originUrl);
 
 
 function activateTab(tabname, navtab, from) {
   console.log(tabname);
+  let newUrl = originUrl + "/" + tabname;
+  console.log(newUrl);
+  window.history.pushState(null, null, newUrl);
   var tabs = document.getElementsByClassName('content');
   var navtabs = document.getElementsByClassName('tab');
   for (var i = 0; i < tabs.length; i++) {
@@ -145,12 +150,22 @@ function createAbstractList(list) {
 
 function toggleAbstract(id) {
   console.log(id);
-  elem = document.getElementById(id);
-  if (elem.classList.contains("hidden")) {
-    elem.classList.remove("hidden");
-  } else {
-    elem.classList.add("hidden");
+  let abstracts = document.getElementsByClassName("abstract");
+  for (var a of abstracts) {
+    if (a.classList.contains("hidden")) {
+      if (a.id == id) {
+        a.classList.remove("hidden");
+      }
+    } else {
+      a.classList.add("hidden");
+    }
   }
+  //elem = document.getElementById(id);
+  //if (elem.classList.contains("hidden")) {
+  //  elem.classList.remove("hidden");
+  //} else {
+  //  elem.classList.add("hidden");
+  //}
 }
 
 function createScheadule(list) {
