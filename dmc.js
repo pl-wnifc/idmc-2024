@@ -40,9 +40,17 @@ var originUrl = window.location.href;
 
 function activateTab(tabname, navtab, from) {
   console.log(tabname);
-  let newUrl = originUrl + "/" + tabname;
-  console.log(newUrl);
-  window.history.pushState(null, null, newUrl);
+  if (/^http/.test(originUrl)) {
+    if (tabname == 'home') {
+      window.history.pushState(null, null, originUrl);
+    } else {
+      let newUrl = originUrl + tabname;
+      window.history.pushState(null, null, newUrl);
+    }
+    
+  }
+  //console.log(newUrl);
+  //window.history.pushState(null, null, newUrl);
   var tabs = document.getElementsByClassName('content');
   var navtabs = document.getElementsByClassName('tab');
   for (var i = 0; i < tabs.length; i++) {
