@@ -35,10 +35,13 @@ xhr2.onload = () => {
 };
 
 var originUrl = window.location.href;
+if (/#/.test(originUrl)) {
+  let target = originUrl.match(/#.*$/)[0];
+  target = target.replace("#", "");
+  originUrl = originUrl.replace(/#.*$/, '');
+}
 onload = (event) => {
   if (/#/.test(originUrl)) {
-    let target = originUrl.match(/#.*$/)[0];
-    target = target.replace("#", "");
     if (target == "abstracts" || target == "schedule" || target == "workshops") {
       let navtabname = "nav-" + target;
       let test = document.getElementById(target);
