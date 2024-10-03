@@ -35,6 +35,20 @@ xhr2.onload = () => {
 };
 
 var originUrl = window.location.href;
+onload = (event) => {
+  if (/#/.test(originUrl)) {
+    let target = originUrl.match(/#.*$/)[0];
+    target = target.replace("#", "");
+    if (target == "abstracts" || target == "schedule" || target == "workshops") {
+      let navtabname = "nav-" + target;
+      let test = document.getElementById(target);
+      activateTab(target, navtabname);
+    } else {
+      activateTab("home", "nav-home")
+    }
+  }
+};
+
 //console.log(originUrl);
 
 
@@ -100,7 +114,6 @@ function createAbstractList(list) {
     day: 'numeric',
     month: 'long',
   };
-  console.log("got here");
   for (var i = 0; i < list.length; i++) {
     let id = "abs" + String(i);
     //console.log(id);
@@ -208,7 +221,6 @@ function createWorkshopList(list) {
     day: 'numeric',
     month: 'long',
   };
-  console.log("got here");
   for (var i = 0; i < list.length; i++) {
     let id = "w" + String(i);
     let contentId = "w" + String(i) + "-description";
@@ -218,7 +230,6 @@ function createWorkshopList(list) {
     let workshopHead = document.createElement("div");
     workshopHead.classList.add("workshop-header");
     func = "activateWorkshop(\"" + id + "\", \"" + contentId + "\")";
-    console.log("w func:" + func);
     workshopHead.setAttribute("onclick", func);
     let title = document.createElement("p");
     title.classList.add('title');
