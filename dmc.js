@@ -27,6 +27,7 @@ xhr2.onload = () => {
     const data = xhr2.response;
     console.log(data);
     workshops = data;
+    createWorkshopList(workshops);
     //document.getElementById('datastore').innerHTML = JSON.stringify(presentations);
   } else {
     console.log(`Error: ${xhr2.status}`);
@@ -77,11 +78,11 @@ function activateWorkshop(wid, wcontent) {
 function createAbstractList(list) {
   let container = document.getElementById("abstract-container");
   const options = {
-  weekday: 'long',
-  year: 'numeric',
-  day: 'numeric',
-  month: 'long',
-};
+    weekday: 'long',
+    year: 'numeric',
+    day: 'numeric',
+    month: 'long',
+  };
   console.log("got here");
   for (var i = 0; i < list.length; i++) {
     let id = "abs" + String(i);
@@ -170,4 +171,70 @@ function createScheadule(list) {
   }
 
   //console.log(dates);
+}
+
+function createWorkshopList(list) {
+  let container = document.getElementById("workshop-container");
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    day: 'numeric',
+    month: 'long',
+  };
+  console.log("got here");
+  for (var i = 0; i < list.length; i++) {
+    let id = "w" + String(i);
+    let contentId = "w" + String(i) + "-description";
+    //console.log(id);
+    let item = document.createElement("div");
+    item.classList.add("workshop-item");
+    let workshopHead = document.createElement("div");
+    workshopHead.classList.add("workshop-header");
+    func = "activateWorkshop(\"" + id + "\", \"" + contentId + "\")";
+    console.log("w func:" + func);
+    workshopHead.setAttribute("onclick", func);
+    let title = document.createElement("p");
+    title.classList.add('title');
+    title.innerHTML = list[i].title;
+    let author = document.createElement("p");
+    author.classList.add('author');
+    author.innerHTML = list[i].presenter;
+
+    //let affiliation = document.createElement("p");
+    //affiliation.classList.add("affiliation");
+    //affiliation.innerHTML = list[i].affiliation;
+    isodate = new Date(list[i].date);
+    //console.log(date);
+    dateString = isodate.toLocaleDateString("en-US", options);
+
+    let date = document.createElement("p");
+    date.classList.add("date");
+    date.innerHTML = dateString + ", " + list[i].time
+
+    workshopHead.appendChild(title);
+    workshopHead.appendChild(author);
+    //abstractHead.appendChild(affiliation);
+    workshopHead.appendChild(date);
+
+    let abstract = document.createElement("div");
+    abstract.setAttribute("id", contentId);
+    abstract.classList.add('abstract');
+    abstract.classList.add('hidden');
+
+    let paragraphs = list[i].abstract.split("\\n");
+    for (var j = 0; j < paragraphs.length; j++) {
+      let abstractP = document.createElement("p");
+      abstractP.classList.add("abstract-content");
+      abstractP.innerHTML = paragraphs[j];
+      abstract.appendChild(abstractP);
+    }
+
+
+
+
+
+    item.appendChild(workshopHead);
+    item.appendChild(abstract);
+    container.appendChild(item);
+  }
 }
