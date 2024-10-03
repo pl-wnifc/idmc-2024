@@ -36,8 +36,9 @@ xhr2.onload = () => {
 
 var originUrl = window.location.href;
 console.log(originUrl);
+let target;
 if (/#/.test(originUrl)) {
-  let target = originUrl.match(/#.*$/)[0];
+  target = originUrl.match(/#.*$/)[0];
   target = target.replace("#", "");
   console.log(target);
   originUrl = originUrl.replace(/#.*$/, '');
