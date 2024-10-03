@@ -40,6 +40,7 @@ if (/#/.test(originUrl)) {
   let target = originUrl.match(/#.*$/)[0];
   target = target.replace("#", "");
   originUrl = originUrl.replace(/#.*$/, '');
+  console.log(originUrl);
 }
 onload = (event) => {
   if (/#/.test(originUrl)) {
