@@ -44,10 +44,10 @@ function activateTab(tabname, navtab, from) {
     if (tabname == 'home') {
       window.history.pushState(null, null, originUrl);
     } else {
-      let newUrl = originUrl + tabname;
+      let newUrl = originUrl + "#" + tabname;
       window.history.pushState(null, null, newUrl);
     }
-    
+
   }
   //console.log(newUrl);
   //window.history.pushState(null, null, newUrl);
