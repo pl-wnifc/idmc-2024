@@ -142,3 +142,12 @@ td {
 .hour {
   font-weight: bold;
 }
+
+.linkicon {
+  color: #516f90;
+}
+
+.linkicon:hover {
+  cursor: pointer;
+
+}

@@ -57,21 +57,25 @@ function activateTab(tabname, navtab, from) {
 }
 
 function activateWorkshop(wid, wcontent) {
-  console.log(wid);
-  //var workshopDesc = document.getElementsByClassName('workshop-description');
-  //for (var i = 0; i < workshopDesc.length; i++) {
-  //  if (workshopDesc[i].classList.contains('hidden')) {
-  //
-  //  } else {
-  //    workshopDesc[i].classList.add('hidden');
-  //  }
-  //}
-  var wdescription = document.getElementById(wcontent);
-  if (wdescription.classList.contains('hidden')) {
-    wdescription.classList.remove('hidden');
-  } else {
-    wdescription.classList.add('hidden');
+  var workshopDesc = document.getElementsByClassName('abstract');
+  for (var i = 0; i < workshopDesc.length; i++) {
+    if (workshopDesc[i].classList.contains('hidden')) {
+      if (workshopDesc[i].id == wcontent) {
+        workshopDesc[i].classList.remove('hidden');
+      }
+    } else {
+      workshopDesc[i].classList.add('hidden');
+    }
   }
+
+  //var wdescription = document.getElementById(wcontent);
+  //if (wdescription.classList.contains('hidden')) {
+  //  console.log("open");
+  //  wdescription.classList.remove('hidden');
+  //} else {
+  //  console.log("close");
+  //  wdescription.classList.add('hidden');
+  //}
 
 }
 
@@ -229,12 +233,18 @@ function createWorkshopList(list) {
       abstract.appendChild(abstractP);
     }
 
-
-
-
-
     item.appendChild(workshopHead);
     item.appendChild(abstract);
     container.appendChild(item);
   }
+}
+
+function goToDescription(tab, navtab, item, desc) {
+  activateTab(tab, navtab)
+  if (tab == "abstracts") {
+    toggleAbstract(desc);
+  } else if (tab == "workshops") {
+    activateWorkshop(item, desc);
+  }
+
 }
