@@ -39,6 +39,7 @@ console.log(originUrl);
 if (/#/.test(originUrl)) {
   let target = originUrl.match(/#.*$/)[0];
   target = target.replace("#", "");
+  console.log(target);
   originUrl = originUrl.replace(/#.*$/, '');
   console.log(originUrl);
 }
