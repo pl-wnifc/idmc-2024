@@ -1,3 +1,4 @@
+
 html {
 	background: url('/img/bg1.svg') no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -5,10 +6,14 @@ html {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: "Courier New";
+	font-optical-sizing: auto;
 }
+
 body {
 	/*background-image: url("/img/bg.svg");*/
+	font-optical-sizing: auto;
 }
+
 .main {
 	position: relative;
 	max-width: 1200px;
