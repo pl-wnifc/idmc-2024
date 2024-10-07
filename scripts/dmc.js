@@ -181,6 +181,7 @@ function activateWorkshop(wid, wcontent) {
 //
 
 function createAbstractList(list) {
+  console.log(list);
 	let container = document.querySelector("#abstract-container");
 	let options = {
 		weekday: 'long',
@@ -189,7 +190,9 @@ function createAbstractList(list) {
 		month: 'long',
 	};
 	for (let i=0; i<list.length; i++) {
-		let id = "abs" + String(i);
+		//let id = "abs" + String(i);
+    let id = list[i].id;
+    console.log(id);
 		let item = document.createElement("div");
 		item.classList.add("abstract-item");
 		let abstractHead = document.createElement("div");
