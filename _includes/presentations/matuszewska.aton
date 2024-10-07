@@ -66,15 +66,16 @@
 	research goals.
 
 	The paper is divided into two case studies: a statistical
-	music analysis performed using HumdrumR software (https://computational-cognitive-musicology-lab.github.io/humdrumR)on Oskar
-	Kolberg's Opera Omnia (19<div class="comma"></div>000 Polish folk
-	tunes), and a text analysis using Natural Language Processing
-	(NLP) methods applied to 2<div class="comma"></div>000 monophonic
-	tunes from the Essen Folksong Collection, carried out using
-	the R programming language.  These examples showcase the
-	practical application of the proposed interface and its
-	ability to facilitate detailed exploration of large music-text
-	corpora.
+	music analysis performed using HumdrumR software
+	(https://computational-cognitive-musicology-lab.github.io/humdrumR)
+	on Oskar Kolberg's Opera Omnia (19<div class="comma"></div>000
+	Polish folk tunes), and a text analysis using Natural
+	Language Processing (NLP) methods applied to 2<div
+	class="comma"></div>000 monophonic tunes from the Essen
+	Folksong Collection, carried out using the R programming
+	language.  These examples showcase the practical application
+	of the proposed interface and its ability to facilitate
+	detailed exploration of large music-text corpora.
 
 @@END: PRESENTATION
 
