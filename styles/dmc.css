@@ -172,5 +172,16 @@ td {
 
 .linkicon:hover {
 	cursor: pointer;
-
 }
+
+a:link, a:visited, a:active {
+	color: rgb(81, 111, 144);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(81, 111, 144);
+	text-decoration: underline;
+}
+
+

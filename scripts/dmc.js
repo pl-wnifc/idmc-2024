@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	createAbstractList(Presentations);
 	createWorkshopList(Workshops);
+	fillInPresentationsSchedule(Presentations);
 
 	let originUrl = window.location.href;
 	let target;
@@ -178,7 +179,7 @@ function activateWorkshop(wid, wcontent) {
 
 function createAbstractList(list) {
 	let container = document.querySelector("#abstract-container");
-	const options = {
+	let options = {
 		weekday: 'long',
 		year: 'numeric',
 		day: 'numeric',
@@ -297,7 +298,7 @@ function createSchedule(list) {
 
 function createWorkshopList(list) {
 	let container = document.querySelector("#workshop-container");
-	const options = {
+	let options = {
 		weekday: 'long',
 		year: 'numeric',
 		day: 'numeric',
@@ -374,23 +375,57 @@ function goToDescription(tab, navtab, item, desc) {
 
 function formatDate(inputDate) {
 	// Create a Date object from the input string (YYYY-MM-DD)
-	const date = new Date(inputDate);
+	let date = new Date(inputDate);
 
 	// Define arrays for the day names and month names
-	const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-	const months = [
+	let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	let months = [
 		"January", "February", "March", "April", "May", "June", 
 		"July", "August", "September", "October", "November", "December"
 	];
 
 	// Extract the necessary parts from the Date object
-	const dayName = days[date.getUTCDay()]; // Get the day of the week (using UTC to avoid localization)
-	const monthName = months[date.getUTCMonth()]; // Get the month (using UTC)
-	const day = date.getUTCDate(); // Get the day of the month (using UTC)
-	const year = date.getUTCFullYear(); // Get the year
+	let dayName = days[date.getUTCDay()]; // Get the day of the week (using UTC to avoid localization)
+	let monthName = months[date.getUTCMonth()]; // Get the month (using UTC)
+	let day = date.getUTCDate(); // Get the day of the month (using UTC)
+	let year = date.getUTCFullYear(); // Get the year
 
 	// Return the formatted string
 	return `${dayName}, ${monthName} ${day}, ${year}`;
 }
+
+
+//////////////////////////////
+//
+// fillInPresentationsSchedule --
+//
+
+function fillInPresentationsSchedule() {
+	let rows = document.querySelectorAll('tr[data-type="presentation"][data-name]');
+
+	for (let i=0; i<rows.length; i++) {
+		let nameid = rows[i].dataset.name;
+		let entry = pLookup[nameid];
+		if (!entry) {
+			console.error(`Error: cannot find ${nameid} in pLookup`);
+		}
+		let output = "";
+		output += `
+				<td class="hour">${entry.time}</td>
+				<td class="event">
+		`;
+		if (entry.keynote === "true") {
+			output += "Keynote: ";
+		}
+		output += `<b class="linkicon" onclick="goToDescription('abstracts', 'nav-abstracts', '', '${nameid}')">${entry.title}</b>`;
+		output += `<br/>`;
+		let name = entry.presenter.replace(/<sup>.*?<\/sup>/g, "");
+		output += name;
+		output += `</td>`;
+		rows[i].innerHTML = output;
+	}
+
+}
+
 
 
