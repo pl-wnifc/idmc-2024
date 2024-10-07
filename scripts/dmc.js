@@ -112,9 +112,7 @@ function parsePresentations(presentations) {
 function activateTab(tabname, navtab, from) {
 	let originUrl = window.location.href;
   if (/#/.test(originUrl)) {
-    console.log(originUrl);
     originUrl = originUrl.replace(/#.*$/, "");
-    console.log(originUrl);
   }
 	if (/^http/.test(originUrl)) {
 		if (tabname == 'home') {
