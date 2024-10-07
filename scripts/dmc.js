@@ -111,6 +111,11 @@ function parsePresentations(presentations) {
 
 function activateTab(tabname, navtab, from) {
 	let originUrl = window.location.href;
+  if (/#/.test(originUrl)) {
+    console.log(originUrl);
+    originUrl = originUrl.replace(/#.*$/, "");
+    console.log(originUrl);
+  }
 	if (/^http/.test(originUrl)) {
 		if (tabname == 'home') {
 			window.history.pushState(null, null, originUrl);
@@ -380,7 +385,7 @@ function formatDate(inputDate) {
 	// Define arrays for the day names and month names
 	let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 	let months = [
-		"January", "February", "March", "April", "May", "June", 
+		"January", "February", "March", "April", "May", "June",
 		"July", "August", "September", "October", "November", "December"
 	];
 
@@ -426,6 +431,3 @@ function fillInPresentationsSchedule() {
 	}
 
 }
-
-
-
