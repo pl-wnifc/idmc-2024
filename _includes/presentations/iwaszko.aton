@@ -9,7 +9,44 @@
 @date: 2024-10-23
 @time: 12:00
 @abstract:
+
+  This paper presents the outcomes of the <i>Chopin Heritage 
+  in Open Access</i> project, an EU-funded initiative completed
+  between 2018 and 2021, dedicated to digitizing and making
+  accessible the extensive cultural legacy of Fryderyk Chopin.
+  Led by the Fryderyk Chopin Institute, the project focused
+  on digitizing a wide range of materials from the Fryderyk
+  Chopin Museum and The Library of the Fryderyk Chopin
+  Institute. The digitized objects, now accessible via the
+  portal chopin.musicsources.pl, include manuscripts, printed
+  scores, letters, memorabilia, visual arts, recordings from
+  the Chopin Competition, and 19th-century applied arts.
+
+  A separate portal, chopinscores.org, was created to host
+  digital music editions. One of the key branches of this
+  project involved the preparation of over 500 digital files
+  in the Humdrum format, focusing on Chopin’s first printed
+  editions in French, German, English, and Polish. These
+  files offer diplomatic editions of the prints, providing a
+  valuable resource for both researchers and musicians.
+
+  Thanks to the close cooperation with Prof. Craig Sapp, who
+  designed and implemented all the necessary digital tools,
+  Humdrum’s analytical capabilities were utilized to build
+  a sophisticated set of features for the portal. These tools
+  enable users to adjust scores to their viewing preferences,
+  search music by melody, rhythm, or interval succession,
+  perform automated tonal analysis, and compare different
+  versions of the same work. These innovations have greatly
+  enhanced both the accessibility and scholarly use of
+  Chopin’s works in a digital environment.
+
+  This paper will focus on the creation of digital editions,
+  discussing the goals of the project, the challenges
+  encountered with encoding, and a review of the most
+  important functionalities. By detailing these aspects, it
+  highlights the potential of digital editions to support
+  both academic research and public engagement with Chopin’s
+  music.
+
 @@END: PRESENTATION
-
-
-
