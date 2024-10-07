@@ -1,0 +1,79 @@
+
+
+
+@@BEGIN: PRESENTATION
+@id: dahlig-sapp
+@title: Digitalisation of musical notations from Oskar Kolberg's Complete Works as an example of technological development of national cultural resources
+@presenter: Ewa Dahlig-Turek<sup>1</sup> &amp; Craig Stuart Sapp<sup>2</sup>
+@affiliation: (1) The Institute of Art of the Polish Academy of Sciences, Warsaw, (2) CCARH/PHI/Stanford University, California, USA
+@date: 2024-10-24
+@time: 12:00
+@abstract: 
+
+	EsAC (Essener Assoziativ Code), one of the oldest music
+	encoding formats still in use today, was developed in the
+	1980s at the University of Essen by Helmut Schaffrath.
+	Widely recognized in digital musicology for the dataset
+	commonly referred to as the Essen Folksong Collection from
+	this time, the code still remains in active use at The
+	Institute of Art of the Polish Academy of Sciences in Warsaw
+	for inputting extensive musical resources that form an
+	important part of Poland's national cultural heritage.
+
+	The core of the Polish EsAC resource is a collection based
+	on songs and ethnographic documentation gathered by Oskar
+	Kolberg (1814–1896), comprising over 20<div class="comma"></div>000
+	musical records. This extensive collection offers invaluable
+	comparative material for research across Europe, such as
+	the study of musical themes in European ballads, individual
+	genres of musical folklore, tonal structures, rhythmic
+	patterns, and more. It also opens new pathways for exploring
+	the relationship between composers' works and musical
+	folklore, especially as the EsAC database continues to
+	expand with additional sources.
+
+	Alongside the development of Kolberg resources, the webEsAC
+	application has been developed (https://webesac.pcss.pl),
+	along with a dedicated version for the Kolberg collection
+	(https://kolberg.ispan.pl/webesac), enabling both editing
+	and searching musical content, as well as some analytical
+	work. The existing functionality of webEsAC includes reducing
+	songs to melodic or rhythmic patterns, transforming scale
+	degree sequences into interval sequences, abstracting scales,
+	cadential notes, and sequences of accented notes, as well
+	as generating statistics of scales and rhythmic structures.
+	The presentation will showcase examples of these analytical
+	processes.  Users can also contribute their own EsAC resources
+	to the webEsAC database.
+
+	Given the limitations of the EsAC format, which is primarily
+	designed for only recording monophonic music, further
+	developments in the use of the collected data will need to
+	take place outside this system. New opportunities have
+	arisen from converting EsAC data to the Humdrum format,
+	particularly through the Art Institute's collaboration with
+	Craig Sapp to expand Verovio Humdrum Viewer
+	(https://verovio.humdrum.org) to support EsAC data directly.
+	This expansion enables dynamic notation display while editing
+	EsAC melodies, browsing the Kolberg collection through the
+	VHV interface, and online conversion to other digital
+	formats, including Humdrum, MIDI, MusicXML, and MEI, providing
+	additional ways to disseminate EsAC data to other analysis
+	platforms. VHV also provides links directly to scanned
+	sources of the Kolberg collection, useful for comparing
+	EsAC encodings with the original music notation.
+
+	In addition, Humdrum analysis tools are available online
+	for use directly with EsAC data through dynamic conversion
+	to Humdrum data, or with additional analyses possible
+	offline.  Humdrum's large-scale analysis capabilities for
+	EsAC collections, particularly Kolberg's, will be highlighted,
+	including searches for EsAC melody quotations in Humdrum
+	musical databases such as The Fryderyk Chopin Institute's
+	collections of Chopin's music and 8<div class="comma"></div>000
+	scores from the Polish Music in Open Access project.
+
+@@END: PRESENTATION
+
+
+

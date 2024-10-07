@@ -1,0 +1,60 @@
+
+
+
+@@BEGIN: PRESENTATION
+@id: bell
+@title: Interfacing Digital Musicology with Music Theory:
+	A Case Study in the Mysterium Corpus
+@presenter: Bryan Jacob Bell
+@affiliation: University of British Columbia, Canada
+@date: 2024-10-25
+@time: 12:30
+@abstract: 
+
+	One approach afforded by digital musicology is the
+	hypothesis-driven corpus study. Digital corpora allow the
+	researcher to define various concepts (e.g., chords and
+	melodies) in ways that can be assessed systematically and
+	efficiently across an arbitrary number of compositions.
+	This paper describes one such method, in which digital
+	musicology engages with traditional music theory research,
+	as applied to the Mysterium corpus. Mysterium is an encoding
+	of all of Alexander Scriabin’s compositions for solo piano
+	in the kern representation of Humdrum (Huron, 2002). Scriabin
+	is known for his transition from an early, Romantic style
+	influenced by Fryderyk Chopin, to a later, atonal style
+	characterized by its quartal harmony.  Baker (1986), based
+	on manual score analysis, conjectured that the representative
+	harmony of Scriabin’s middle or transitional era (1903–1913)
+	is the dominant seventh with a lowered fifth; this harmony
+	is a subset of the octatonic scale that is ubiquitous in
+	the composer’s music of this era. To investigate this claim,
+	the dominant seventh with a lowered fifth was defined as
+	being (a) enharmonic with the French +6 chord, but (b)
+	spelled with a diminished third (Bell and Albrecht, 2022).
+	Using the Humdrum Toolkit, a harmonic analysis of the corpus
+	was conducted, from which French +6 chords were extracted.
+	From this subset, harmonies spelled with a diminished third
+	were then selected, following the assumption based on
+	voice-leading that the diminished third would be more common
+	for dominant seventh chords than for French +6 chords. When
+	these harmonies are then counted as a proportion of all
+	harmonies for each composition, we find indeed that Scriabin’s
+	usage of the dominant seventh with lowered fifth peaked in
+	his transitional era. This paper further elaborates on these
+	points, highlighting the difficulties and limitations of
+	programmatic definitions, existing tools, and fixed corpora.
+	Programmatic definitions are often heuristics; they sacrifice
+	some degree of subtlety that would require human interpretation
+	or attempt to avoid some degree of complexity. Corpus studies
+	can be restricted by the capabilities of existing tools.
+	Corpus studies can also be limited by the fixed nature of
+	corpora themselves. That is, the researcher only has the
+	data available to them (e.g., all of the music of one
+	composer) and must work with any restrictions of those data
+	(e.g., uneven output across a composer’s eras).
+
+@@END: PRESENTATION
+
+
+

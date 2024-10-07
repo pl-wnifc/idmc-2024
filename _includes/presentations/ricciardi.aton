@@ -1,0 +1,76 @@
+
+
+
+@@BEGIN: PRESENTATION
+@id: ricciardi
+@title: Studying the Late Italian Madrigal through the Tasso in Music Project
+@presenter: Emiliano Ricciardi
+@affiliation: University of Massachusetts, Amherst
+@date: 2024-10-25 
+@time: 10:00
+@abstract:
+
+	The Tasso in Music Project (https://tassomusic.org) is a
+	digital critical edition of the early modern musical settings
+	of Torquato Tasso’s poetry (1544–95). As the most prominent
+	poet in late sixteenth-century Italy, Tasso’s influence
+	extended beyond literature to encompass the visual arts and
+	music. From the 1570s through the 1630s, over 200
+	composers—including eminent names like Marenzio (1553–99)
+	and Monteverdi (1567–1643)—crafted musical renditions of
+	Tasso’s poems. The resulting corpus comprises more than 800
+	settings, offering a nuanced snapshot of the late Italian
+	madrigal and related genres during an era of transformative
+	shifts from polyphony to concertato and monodic styles.
+	Given the multitude of parallel settings for the same poem,
+	this corpus is also exceptionally conducive to comparative
+	analysis. Despite its magnitude and significance, much of
+	this repertoire had long been unavailable in modern editions,
+	considerably hindering scholars’ and performers’ engagement.
+	The Tasso in Music Project has filled this lacuna by providing
+	newly crafted modern editions of the musical settings in a
+	variety of digital music formats (such as Humdrum, MEI,
+	MIDI, and MusicXML). The editions are rendered online via
+	Verovio, with dynamic display of critical notes and
+	commentaries. Reflecting the strong literary component of
+	the project, parallel to the musical editions, the project
+	also features TEI transcriptions of the poetic texts as
+	they appear in the musical settings and in contemporaneous
+	literary sources, both manuscript and printed, as well as
+	tools for the dynamic visualization of literary variants
+	across sources. This textual component—often missing in
+	traditional editions of Italian madrigals—yields indispensable
+	data for an understanding of the transmission of Tasso’s
+	poetry, which is especially intricate as his poems typically
+	survive in multiple versions with substantial variants.
+	Accordingly, these data are of interest both for musicologists,
+	who can use them to trace the sources used by composers,
+	and for literary philologists, who can use them to study
+	the tradition of Tasso’s texts and his compositional process.
+	Thanks to digital encoding, the project also offers a vast
+	array of tools that facilitate analysis of the repertoire,
+	especially music-text relations. Powered by Humdrum, these
+	include: simultaneous music and text searches, applicable
+	to individual pieces or the entire repertoire; text-extraction,
+	through which users can visualize the text of the poems as
+	it appears in the underlay of the settings, including
+	repetitions, with the ability to sort words by frequency
+	of occurrence; statistical analysis of melismas; automated
+	analysis of the relationship between poetic prosody and
+	musical rhythm/meter; automated analysis of cadences and
+	their relationship with versification, syntax, and punctuation
+	in the text underlay. Through its editions and analytical
+	tools, the Tasso in Music Project addresses a wide audience
+	encompassing music historians, theorists, performers, and
+	literary scholars. Furthermore, the project introduces a
+	new approach to editing Italian madrigals, one in which,
+	thanks to digital technology, music and poetry receive equal
+	attention, as do philology and analysis.
+
+
+
+
+@@END: PRESENTATION
+
+
+

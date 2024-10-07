@@ -1,0 +1,82 @@
+
+
+
+@@BEGIN: PRESENTATION
+@id: matuszewska
+@title: Bridging Traditional Musicology and Digital Methods. Case study:
+	Interactive Diagrammatic Analysis of Music-Text Corpora
+@presenter: Anna Matuszewska
+@affiliation: The Institute of Art of the Polish Academy of Sciences, Warsaw
+@date: 2024-10-24
+@time": 12:30
+@abstract:
+
+	The increasing digitization of music collections and the
+	availability of a variety of analytical tools are opening
+	up research perspectives for both statistical music analysis
+	and corpus-based research. However, as seen in the case of
+	the Essen Folksong Collection, this type of research has
+	gained relatively little interest. The data made
+	available—approximately 5<div class="comma"></div>300 monophonic
+	tunes from Germanic regions encoded in EsAC format and
+	converted to Humdrum—has been primarily used by researchers
+	in cognitive musicology or Music Information Retrieval
+	(MIR).
+
+	One of the key reasons for this limited use is the complicated
+	process of acquiring the relevant digital competencies,
+	which are non-specific to traditional musicology. Additionally,
+	the specifics of the encoding format dictate the choice of
+	tools, narrowing the possibility of finding comparable
+	corpora for analysis. As a result, many digitized music
+	corpora remain underutilized, often only analyzed by their
+	creators or not used at all, either due to technical
+	limitations or language barriers.
+
+	This paper addresses these challenges by demonstrating how
+	to overcome linguistic and technical barriers through data
+	visualization and diagrammatic analysis. It presents an
+	initial draft of an interactive analytical interface designed
+	according to a user-centered approach, enabling traditional
+	musicologists to explore large music corpora and draw initial
+	conclusions about their subsets. The essence of the interface
+	lies in allowing users to browse music databases on two
+	levels: close reading (detailed analysis of single tunes)
+	and distant reading (broad analysis of entire corpora or
+	user-defined subsets).  This approach provides a multi-layered
+	but accessible overview of the database, allowing for the
+	classification and comparison of its subsets.
+
+	The interface is built around customizable dashboards that
+	present coupled diagrams visualizing the results of melodic,
+	rhythmic, and text analyses. Users can define up to three
+	subsets of the corpus, compare them, and filter data based
+	on set parameters. For close reading, the analysis can be
+	further narrowed to phrases, measures, or motifs. The
+	interactive elements, including filters and range-limiting
+	sliders, allow users to view the corpus from various
+	perspectives without requiring advanced technical skills.
+
+	The potential of this diagrammatic approach to music analysis
+	is significant, as it can increase interest in existing
+	collections and unlock the potential for comparative research.
+	Presenting analytical results through diagrams makes the
+	data easier to interpret, and the interface's interactive
+	design enables users to adjust their views to suit different
+	research goals.
+
+	The paper is divided into two case studies: a statistical
+	music analysis performed using HumdrumR software (https://computational-cognitive-musicology-lab.github.io/humdrumR)on Oskar
+	Kolberg's Opera Omnia (19<div class="comma"></div>000 Polish folk
+	tunes), and a text analysis using Natural Language Processing
+	(NLP) methods applied to 2<div class="comma"></div>000 monophonic
+	tunes from the Essen Folksong Collection, carried out using
+	the R programming language.  These examples showcase the
+	practical application of the proposed interface and its
+	ability to facilitate detailed exploration of large music-text
+	corpora.
+
+@@END: PRESENTATION
+
+
+

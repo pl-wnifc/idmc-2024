@@ -1,0 +1,65 @@
+
+
+
+@@BEGIN: PRESENTATION
+@id: sapp
+@keynote: true
+@title: Hierarchical analyses of Musical Structure
+@presenter: Craig Stuart Sapp
+@affiliation: CCARH/PHI/Stanford University
+@date: 2024-10-23
+@time: 10:30
+@abstract: 
+
+	This presentation introduces numerical and visual techniques
+	for analyzing structures in both written scores and musical
+	performances.  These visualizations, known as "scape" plots,
+	display both small- and large-scale features of the music
+	and the transitions between them, much like a landscape
+	painting captures the near (such as grass) to distant (such
+	as sky) elements of a scene. The plots offer a more detailed
+	understanding of musical structures and performance practices,
+	connecting abstract musical concepts with their perceptual
+	impact. Using these techniques expands our ability to analyze
+	and appreciate the complexity of music across historical
+	periods and performance traditions.
+
+	Musical works composed within functional tonality are
+	typically described as belonging to a specific key, such
+	as "Sonata in C minor." However, this key designation
+	typically reflects only the initial and often final key of
+	a work or movement. Keyscapes, a specific type of scape
+	plot for studying harmonic structure, reveal internal keys
+	and illustrate how they relate to one another and their
+	relative importance within a work. Keyscapes also offer a
+	quick overview of key relationships between movements,
+	particularly when they are in contrasting keys. These
+	visualizations can summarize a composer's treatment of
+	harmonic structure across a repertoire or genre, revealing
+	patterns of key use over an extensive body of work. By
+	presenting harmonic structures in a tangible and intuitive
+	way, keyscapes offer valuable insights for both novices and
+	experts.  They also highlight stylistic tendencies, such
+	as the prominent use of the circle of fifths in the Baroque
+	period, the more balanced harmonic approaches of the Classical
+	period, and the expansion of harmonic complexity throughout
+	the Romantic period, leading to a gradual dissolution of
+	tonal structures in twentieth-century music.
+
+	Scape plots can also be applied to various aspects of
+	performances, particularly tempo and dynamics, providing
+	insights into phrasing, accentuation, and stylistic differences
+	between performers.  Scape plots of individual performances
+	can highlight a performer’s phrasing structure. They also
+	enable comparisons between performance styles, measuring
+	similarities between different interpretations of a work.
+	This presentation will demonstrate how scape plots can be
+	used to examine the duple and triple aspects of meter across
+	performances of Chopin mazurkas by different pianists.  This
+	presentation will also demonstrate how scape plots have
+	been used to detect plagiarism in commercial recordings.
+
+@@END: PRESENTATION
+
+
+

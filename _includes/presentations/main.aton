@@ -1,0 +1,26 @@
+
+
+{% comment %} Wednesday, October 23, 2024 {% endcomment %}
+{% include presentations/sapp.aton         %}
+{% include presentations/iwaszko.aton      %}
+{% include presentations/konik.aton        %}
+
+
+
+{% comment %} Thursday, October 24, 2024 {% endcomment %}
+{% include presentations/shanahan.aton     %}
+{% include presentations/kranenburg.aton   %}
+{% include presentations/dahlig-sapp.aton  %}
+{% include presentations/matuszewska.aton  %}
+
+
+
+{% comment %} Friday, October 25, 2024 {% endcomment %}
+{% include presentations/ricciardi.aton    %}
+{% include presentations/ory.aton          %}
+{% include presentations/rodin.aton        %}
+{% include presentations/lee.aton          %}
+{% include presentations/bell.aton         %}
+
+
+

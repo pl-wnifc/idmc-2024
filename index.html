@@ -1,11 +1,14 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <script src="dmc.js"></script>
-  <link rel="stylesheet" href="dmc.css">
   <head>
     <meta charset="utf-8">
     <title>Digital Musicology Conference</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <script src="/scripts/aton.js"></script>
+    <script src="/scripts/dmc.js"></script>
+    <link rel="stylesheet" href="/styles/dmc.css">
   </head>
   <body>
     <div class="main">
@@ -23,28 +26,8 @@
         <div onclick="activateTab('workshops', 'nav-workshops')" id="nav-workshops" class="tab">Workshops</div>
       </div>
       <div id="home" class="content">
-        <h1>First International Digital Musicology Conference</h1>
-        <h2>Invitation</h2>
-        <p>We are pleased to announce the <i>Digital Musicology Conference</i>, which will be held from <b>October 23–25, 2024</b>, at the Fryderyk Chopin Institute in Warsaw, Poland.</p>
+        {% include_relative home.html %}
 
-        <p>This conference will focus on the integration of digital technologies into musicological research, with a special emphasis on introducing digital tools and methods to the Polish academic community, where digital musicology has not yet been widely adopted. The event aims to foster the exchange of knowledge and experience by bringing together scholars, researchers, and practitioners from various backgrounds.</p>
-
-        <p>Key features of the conference include presentations on innovative research projects, hands-on workshops on digital methodologies, and discussions on the practical application of these tools in music research. The event will gather a mix of established experts, emerging scholars, and participants new to digital approaches.</p>
-
-        <p>The Fryderyk Chopin Institute offers an ideal setting for this important academic exchange, and we warmly invite representatives from universities, music academies, research institutions, and independent researchers to participate.</p>
-        <h2>Organising Committee</h2>
-        <li>Marcin Konik</li>
-        <li>Craig Stuart Sapp</li>
-        <li>Benjamin Ory</li>
-        <li>Jacek Iwaszko</li>
-
-        <h2>Contact Information</h2>
-        <p>
-          <b>The Fryderyk Chopin Institute</b><br>
-          Tamka 43, 00-355 Warsaw, Poland<br>
-          email: <a href="mailto:dmc@nifc.pl">dmc@nifc.pl</a>
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d610.8475527273804!2d21.021965190268045!3d52.236295670773856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc58b11f2141%3A0x47b3ccddeb2568bb!2sNational%20Institute%20of%20Frederic%20Chopin!5e0!3m2!1sen!2spl!4v1727873314514!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div id="schedule" class="content hidden">
         <h1>Schedule</h1>

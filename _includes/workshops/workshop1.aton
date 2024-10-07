@@ -1,0 +1,25 @@
+
+
+
+@@BEGIN: WORKSHOP
+@id: workshop1
+@title: Introduction to Humdrum with Verovio Humdrum Viewer
+@date: 2024-10-23
+@time: 14:30
+@presenter: Craig Stuart Sapp, Jacek Iwaszko
+@abstract:
+
+	This workshop will give an overview of editing music in
+	Verovio Humdrum Viewer in the Humdrum data format  and
+	useful concepts and features that can be added to digital
+	scores beyond the basic notation editing capabilities of
+	standard music editors such as MuseScore, Sibelius, and
+	Dorico.  The workshop presents examples of how digital
+	scores can be published online in HTML files as well as
+	existing tools for adding analytic markup and manipulations
+	of the score.
+
+@@END: WORKSHOP
+
+
+
