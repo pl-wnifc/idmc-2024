@@ -1,223 +1,25 @@
 ---
+layout: default
+permalink: /index.html
 ---
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Digital Musicology Conference</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-    <script src="/scripts/aton.js"></script>
-    <script src="/scripts/dmc.js"></script>
-    <link rel="stylesheet" href="/styles/dmc.css">
-  </head>
-  <body>
-    <div class="main">
-      <div class="header">
-        <img id="banner" src="./img/banner.png" alt="">
-      </div>
-      <div class="tmp hidden" style="height:60px;background-color: #516f90">
 
-      </div>
-      <div class="navbar ">
+<!-- tabs on homepage -->
 
-        <div onclick="activateTab('home', 'nav-home')" id="nav-home" class="tab active">Home</div>
-        <div onclick="activateTab('schedule', 'nav-schedule')" id="nav-schedule" class="tab">Schedule</div>
-        <div onclick="activateTab('abstracts', 'nav-abstracts')" id="nav-abstracts" class="tab">Abstracts</div>
-        <div onclick="activateTab('workshops', 'nav-workshops')" id="nav-workshops" class="tab">Workshops</div>
-      </div>
-      <div id="home" class="content">
-        {% include_relative home.html %}
+<div id="home" class="content">
+	{% include html/home.html %}
+</div>
 
-      </div>
-      <div id="schedule" class="content hidden">
-        <h1>Schedule</h1>
-        <div id="schedule-container" class="">
-          <div id="2024-10-23" class="day">
-            <h2>Wednesday, October 23, 2024</h2>
-            <table class="tg">
-              <tbody>
-                <tr>
-                  <td class="hour">10:00</td>
-                  <td class="event">Welcome and Coffee</td>
-                </tr>
-                <tr data-type="presentation" data-name="sapp"></tr>
-                <tr>
-                  <td class="hour">11:30</td>
-                  <td class="event">coffee break</td>
-                </tr>
-                <tr data-type="presentation" data-name="iwaszko"></tr>
-                <tr data-type="presentation" data-name="konik"></tr>
-                <tr>
-                  <td class="hour">13:00</td>
-                  <td class="event">Lunch break</td>
-                </tr>
-                <tr>
-                  <td class="hour">14:30</td>
-                  <td class="event">Workshop: <b>Introduction to Humdrum with Verovio Humdrum Viewer</b> <b class="linkicon hidden" onclick="goToDescription('workshops', 'nav-workshops', 'w0', 'w0-description')">↗</b> <br>
-                  Craig Stuart Sapp, Jacek Iwaszko
-                  </td>
-                </tr>
-                <tr>
-                  <td class="hour">16:00</td>
-                  <td class="event">coffee break</td>
-                </tr>
-                <tr>
-                  <td class="hour">16:30</td>
-                  <td class="event">Workshop: <b>Google spreadsheets for online metadata access</b> <b class="linkicon hidden" onclick="goToDescription('workshops', 'nav-workshops', 'w1', 'w1-description')">↗</b> <br>
-                  Benjamin Ory, Craig Stuart Sapp, Jacek Iwaszko
-                  </td>
-                </tr>
-                <tr>
-                  <td class="hour">19:00</td>
-                  <td class="event">Conference Dinner</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="2024-10-24" class="day">
-            <h2>Thursday, October 24, 2024</h2>
-            <table class="tg">
-              <tbody>
-                <tr data-type="presentation" data-name="shanahan"></tr>
-                <tr data-type="presentation" data-name="kranenburg"></tr>
-                <tr>
-                  <td class="hour">11:30</td>
-                  <td class="event">coffee break</td>
-                </tr>
-                <tr data-type="presentation" data-name="dahlig-sapp"></tr>
-                <tr data-type="presentation" data-name="matuszewska"></tr>
-                <tr>
-                  <td class="hour">13:00</td>
-                  <td class="event">Lunch break</td>
-                </tr>
-                <tr>
-                  <td class="hour">14:30</td>
-                  <td class="event">Workshop: <b>Creating websites for digital musicology projects</b> <b class="linkicon hidden" onclick="goToDescription('workshops', 'nav-workshops', 'w2', 'w2-description')">↗</b> <br>
-                  Craig Stuart Sapp, Benjamin Ory
-                  </td>
-                </tr>
-                <tr>
-                  <td class="hour">16:00</td>
-                  <td class="event">coffee break</td>
-                </tr>
-                <tr>
-                  <td class="hour">16:30</td>
-                  <td class="event">Workshop: <b>Mapping project</b> <b class="linkicon hidden" onclick="goToDescription('workshops', 'nav-workshops', 'w3', 'w3-description')">↗</b> <br>
-                  Benjamin Ory, Craig Stuart Sapp
-                  </td>
-                </tr>
-                <tr>
-                  <td class="hour">19:00</td>
-                  <td class="event">Concert</td>
-                </tr>
-              </tbody>
-            </table>
+<div id="schedule" class="content hidden">
+	{% include html/schedule.html %}
+</div>
 
-          </div>
-          <div id="2024-10-25" class="day">
-            <h2>Friday, October 25, 2024</h2>
-            <table class="tg">
-              <tbody>
-                <tr data-type="presentation" data-name="ricciardi"></tr>
-                <tr data-type="presentation" data-name="ory"></tr>
-                <tr data-type="presentation" data-name="rodin"></tr>
-                <tr>
-                  <td class="hour">11:30</td>
-                  <td class="event">coffee break</td>
-                </tr>
-                <tr data-type="presentation" data-name="lee"></tr>
-                <tr data-type="presentation" data-name="bell"></tr>
-                <tr>
-                  <td class="hour">13:00</td>
-                  <td class="event">Lunch break</td>
-                </tr>
-                <tr>
-                  <td class="hour">14:30</td>
-                  <td class="event">Workshop: <b>Advanced Humdrum: Using terminal tools</b> <b class="linkicon hidden" onclick="goToDescription('workshops', 'nav-workshops', 'w4', 'w4-description')">↗</b> <br>
-                  Jacek Iwaszko, Craig Stuart Sapp
-                  </td>
-                </tr>
-                <tr>
-                  <td class="hour">16:00</td>
-                  <td class="event">coffee break</td>
-                </tr>
-                <tr>
-                  <td class="hour">16:30</td>
-                  <td class="event">Tour: <b><a target="_blank" href="https://muzeum.nifc.pl/en">Chopin Museum</a></b></td>
-                </tr>
-                <tr>
-                  <td class="hour">17:30</td>
-                  <td class="event">Organizational meeting</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+<div id="abstracts" class="content hidden">
+	{% include html/abstracts.html %}
+</div>
 
-        </div>
-      </div>
-      <div id="abstracts" class="content hidden">
-        <h1>Abstracts</h1>
-        <div id="abstract-container" class="">
-
-        </div>
-      </div>
-      <div id="workshops" class="content hidden">
-        <h1>Workshops</h1>
-        <div id="workshop-container" class="">
-
-        </div>
-        <!--div id="w1" class="workshop">
-          <div onclick="activateWorkshop('w1', 'w1-description')" class="workshop-header">
-            <h2>1. Introduction to Humdrum with Verovio Humdrum Viewer</h2>
-            <h3>Craig Sapp, Jacek Iwaszko</h3>
-          </div>
-          <div id="w1-description" class="workshop-description hidden">
-            <p>description goes here</p>
-          </div>
-        </div>
-        <div id="w2" class="workshop">
-          <div onclick="activateWorkshop('w2', 'w2-description')" class="workshop-header">
-            <h2>2. Google spreadsheets for online metadata access</h2>
-            <h3>Ben Ory, Craig Sapp, Jacek Iwaszko</h3>
-          </div>
-          <div id="w2-description" class="workshop-description hidden">
-            <p>description goes here</p>
-          </div>
-        </div>
-        <div id="w3" class="workshop">
-          <div onclick="activateWorkshop('w3', 'w3-description')" class="workshop-header">
-            <h2>3. Creating websites for digital musicology projects</h2>
-            <h3>Craig Sapp, Ben Ory</h3>
-          </div>
-          <div id="w3-description" class="workshop-description hidden">
-            <p>description goes here</p>
-          </div>
-        </div>
-        <div id="w4" class="workshop">
-          <div onclick="activateWorkshop('w4', 'w4-description')" class="workshop-header">
-            <h2>4. Mapping project</h2>
-            <h3>Ben Ory, Craig Sapp</h3>
-          </div>
-          <div id="w4-description" class="workshop-description hidden">
-            <p>description goes here</p>
-          </div>
-        </div>
-        <div id="w5" class="workshop">
-          <div onclick="activateWorkshop('w5', 'w5-description')" class="workshop-header">
-            <h2>5. Advanced Humdrum: Using terminal tools</h2>
-            <h3>Craig Sapp, Jacek Iwaszko</h3>
-          </div>
-          <div id="w5-description" class="workshop-description hidden">
-            <p>description goes here</p>
-          </div>
-        </div-->
-
-      </div>
+<div id="workshops" class="content hidden">
+	{% include html/workshops.html %}
+</div>
 
 
-    </div>
-    <div id="datastore" class="hidden">
 
-    </div>
-  </body>
-</html>
