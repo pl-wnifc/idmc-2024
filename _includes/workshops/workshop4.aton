@@ -3,11 +3,12 @@
 
 @@BEGIN: WORKSHOP
 @id: workshop4
-@title: Mapping project
+@title: Mapping data with Leaflet
 @date: 2024-10-24
 @time: 16:30
 @presenter: Benjamin Ory, Craig Stuart Sapp
-@abstract:
+@abstract: New web mapping technologies have transformed cartography and are now shaping our digital projects in the humanities, and in music. In this workshop, we will focus on an open-source JavaScript library called Leaflet. We’ll show some projects that use Leaflet and provide an overview of alternative mapping software. We will explain how to structure projects using Google sheets; together, we'll edit a shared mapping project; and we will overlay modern geographic data on historical maps.
+
 @@END: WORKSHOP
 
 
