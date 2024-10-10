@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	createAbstractList(Presentations);
 	createWorkshopList(Workshops);
 	fillInPresentationsSchedule(Presentations);
+  fillInWorkshopsSchedule(Workshops);
 
 	let originUrl = window.location.href;
 	let target;
@@ -30,6 +31,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	showTabContents(target);
 
 });
-
-
-
