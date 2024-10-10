@@ -5,9 +5,25 @@
 @title: Advanced Humdrum: Using terminal tools
 @date: 2024-10-25
 @time: 14:30
-@presenter: Craig Stuart Sapp, Jacek Iwaszko
+@presenter: Jacek Iwaszko, Craig Stuart Sapp
 @abstract:
+
+  Humdrum, beyond being a system of musical notation, is
+  equipped with over 100 computational tools that allow
+  users to perform various forms of musical analysis
+  (tonal, intervallic, rhythmic), as well as transform
+  notation through transposition, part extraction,
+  proportional changes in rhythmic values, and score
+  searching. This workshop is a continuation of the
+  "Introduction to Humdrum" session, focusing on advanced
+  techniques for using these command-line tools. Participants
+  will explore tools from the original Humdrum Toolkit, as
+  well as Humdrum Extras and Humlib. The session will
+  demonstrate the analytical possibilities and show how to
+  effectively use the data these tools return for
+  musicological research. Ideal for those familiar with
+  the basics of Humdrum, this workshop aims to deepen
+  participants' understanding of its applications in digital
+  musicology.
+
 @@END: WORKSHOP
-
-
-
