@@ -7,7 +7,8 @@
 //
 
 function activateWorkshop(wid, wcontent) {
-	let workshopDesc = document.querySelector('.abstract');
+	//let workshopDesc = document.querySelector('abstract');
+  let workshopDesc = document.getElementsByClassName('abstract')
 	for (let i=0; i<workshopDesc.length; i++) {
 		if (workshopDesc[i].classList.contains('hidden')) {
 			if (workshopDesc[i].id == wcontent) {
@@ -28,6 +29,3 @@ function activateWorkshop(wid, wcontent) {
 	// }
 
 }
-
-
-

@@ -17,6 +17,3 @@ function parseWorkshops(workshops) {
 	}
 	return workshops;
 }
-
-
-

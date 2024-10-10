@@ -15,8 +15,9 @@ function createWorkshopList(list) {
 		month: 'long',
 	};
 	for (let i=0; i<list.length; i++) {
-		let id = "w" + String(i);
-		let contentId = "w" + String(i) + "-description";
+		//let id = "w" + String(i);
+    let id = list[i].id;
+		let contentId = id + "-description";
 		let item = document.createElement("div");
 		item.classList.add("workshop-item");
 		let workshopHead = document.createElement("div");
@@ -59,6 +60,3 @@ function createWorkshopList(list) {
 		container.appendChild(item);
 	}
 }
-
-
-
