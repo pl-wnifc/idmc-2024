@@ -11,12 +11,8 @@ function scrollToElement(element, topMargin) {
 	if (!element) {
 		return;
 	}
-	let prevElement = element.previousElementSibling;
-	if (!prevElement) {
-		return;
-	}
 
-	let elementPosition = prevElement.getBoundingClientRect().top + window.pageYOffset;
+	let elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
 	let offsetPosition = elementPosition - topMargin;
 
     window.scrollTo({

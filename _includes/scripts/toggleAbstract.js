@@ -20,7 +20,7 @@ function toggleAbstract(id) {
 		}
 	}
 	if (target) {
-		scrollToElement(target, 80);
+		scrollToElement(target.previousElementSibling, 80);
 	}
 
 }

@@ -3,12 +3,16 @@
 
 @@BEGIN: WORKSHOP
 @id: workshop3
-@title: Creating websites for digital musicology projects
+@title: GitHub for score repositories and websites
 @date: 2024-10-24
 @time: 14:30
 @presenter: Craig Stuart Sapp, Benjamin Ory
 @slides: https://bit.ly/IDCM-github
-@abstract: Abstract goes here
+@abstract: 
+
+	This workshop discusses how to manage and share digital scores using
+	GitHub as well as how to use GitHub Pages to create websites.
+
 @@END: WORKSHOP
 
 
