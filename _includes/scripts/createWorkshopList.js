@@ -42,21 +42,29 @@ function createWorkshopList(list) {
 		//abstractHead.appendChild(affiliation);
 		workshopHead.appendChild(date);
 
-		let abstract = document.createElement("div");
-		abstract.setAttribute("id", contentId);
-		abstract.classList.add('abstract');
-		abstract.classList.add('hidden');
+		let abstractElement = document.createElement("div");
+		abstractElement.setAttribute("id", contentId);
+		abstractElement.classList.add('abstract');
+		abstractElement.classList.add('hidden');
 
 		let paragraphs = list[i].abstract.split("\\n");
 		for (let j=0; j<paragraphs.length; j++) {
 			let abstractP = document.createElement("p");
 			abstractP.classList.add("abstract-content");
 			abstractP.innerHTML = paragraphs[j];
-			abstract.appendChild(abstractP);
+			abstractElement.appendChild(abstractP);
+		}
+
+		if (list[i].slides) {
+			let slidesElement = document.createElement("p");
+			slidesElement.classList.add("abstract-content");
+			abstractElement.appendChild(slidesElement);
+			let slides = `<a class="slides" target="_blank" href="${list[i].slides}">slides</a>`;
+			slidesElement.innerHTML = slides;
 		}
 
 		item.appendChild(workshopHead);
-		item.appendChild(abstract);
+		item.appendChild(abstractElement);
 		container.appendChild(item);
 	}
 }
