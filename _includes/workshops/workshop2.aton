@@ -3,11 +3,25 @@
 
 @@BEGIN: WORKSHOP
 @id: workshop2
-@title: Metadata with Google Spreadsheets
+@title: Metadata with Google Sheets
 @date: 2024-10-23
 @time: 16:30
 @presenter: Benjamin Ory, Craig Stuart Sapp, Jacek Iwaszko
-@abstract: This workshop offers a foundation in organizing, formatting, and displaying data using Google Sheets. This novel method of data storage and display enables users without a significant technical background to build and collaborate on projects. Sapp will show how to export the data by using Google Apps Scripts to turn sheets into JSON files. These JSON files can then be easily loaded onto a web page in order to create a database.
+@abstract: 
+
+	This workshop offers a foundational introduction to organising
+	and displaying metadata on the web using <a target="_blank"
+	href="https://workspace.google.com/products/sheets">Google
+	Sheets</a>.  This user-friendly approach to data management
+	enables individuals without significant technical expertise to
+	create and collaboratively edit metadata for web-based applications.
+	We will explore various projects that employ this method
+	and demonstrate how to export metadata with <a target="_blank"
+	href="https://developers.google.com/apps-script/overview">Google
+	Apps Scripts</a> to convert worksheets into JSON data.  The
+	JSON data can then be used to dynamically update a webpage
+	or downloaded for static integration.
+
 @@END: WORKSHOP
 
 
