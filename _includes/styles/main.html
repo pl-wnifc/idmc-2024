@@ -84,13 +84,17 @@ p.abstract-content {
 
 }
 
-div.tab:hover {
+div.tab:not(.active):hover {
 	background-color: #617fa0;
+	/* background-color: #c0deff; */
 }
 
 .active {
-	background-color: #415f80;
+	/* background-color: #415f80; */
+	background-color: #b1cff0;
+	color: black;
 	font-weight: bold;
+	box-shadow: inset 0 0 0 2px #617fa0;
 }
 
 .hidden {
