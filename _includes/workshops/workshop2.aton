@@ -7,7 +7,7 @@
 @date: 2024-10-23
 @time: 16:30
 @presenter: Benjamin Ory, Craig Stuart Sapp, Jacek Iwaszko
-@abstract:
+@abstract: This workshop offers a foundation in organizing, formatting, and displaying data using Google Sheets. This novel method of data storage and display enables users without a significant technical background to build and collaborate on projects. Sapp will show how to export the data by using Google Apps Scripts to turn sheets into JSON files. These JSON files can then be easily loaded onto a web page in order to create a database.
 @@END: WORKSHOP
 
 
