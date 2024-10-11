@@ -11,19 +11,28 @@
 @time: 10:00
 @abstract: 
 
-In one of the earliest studies employing a computer to explore collections of musical data, Bertrand Bronson wrote in 1949 
-that "scholars in the fields of the Humanities are habitually (and properly) afraid of statistical machinery."  
-Nevertheless, research in the following decades saw a growth in research questions aimed at using the 
-computer as a way of exploring questions of musical style, authorship, and performance analysis, among others. 
-Scholars doing this work in the "mainframe era" were faced with many of the same questions we face today with 
-corpus studies–questions of notation, representative corpora, the construction of tools, *etc.*
+	In one of the earliest studies employing a computer to explore
+	collections of musical data, Bertrand Bronson wrote in 1949 that
+	"scholars in the fields of the Humanities are habitually (and
+	properly) afraid of statistical machinery." Nevertheless, research
+	in the following decades saw a growth in research questions aimed
+	at using the computer as a way of exploring questions of musical
+	style, authorship, and performance analysis, among others.  Scholars
+	doing this work in the "mainframe era" were faced with many of the
+	same questions we face today with corpus studies–questions of
+	notation, representative corpora, the construction of tools, etc.
 
-Using both archival and interview material, this talk discusses the complexities and problems faced by the 
-scholars who attempted to represent musical data in a computationally searchable form, what caused certain 
-initiatives to succeed, and what caused others to fail. I argue that an ahistorical approach to many of these 
-issues in the current fields of corpus studies and computational musicology has sometimes contributed to a sort 
-of intellectual stasis, and that by understanding the long history of analytical dilemmas and decisions faced by 
-scholars of previous generations, we might be better equipped to push the field into new and more exciting directions.
+	Using both archival and interview material, this talk discusses the
+	complexities and problems faced by the scholars who attempted to
+	represent musical data in a computationally searchable form, what
+	caused certain initiatives to succeed, and what caused others to
+	fail. I argue that an ahistorical approach to many of these issues
+	in the current fields of corpus studies and computational musicology
+	has sometimes contributed to a sort of intellectual stasis, and
+	that by understanding the long history of analytical dilemmas and
+	decisions faced by scholars of previous generations, we might be
+	better equipped to push the field into new and more exciting
+	directions.
 
 @@END: PRESENTATION
 
