@@ -10,21 +10,23 @@
 @time: 11:00
 @abstract:
 
-	The EU H2020 Polifonia Project (2021–2024) set as its aim to
-	recreate the connections between music, people, places and events
-	from the sixteenth century to the modern day as an interconnected
-	global database on the web, a knowledge graph. In ten pilot
-	projects and four technology-providing work packages, we took up
-	this challenge. In this talk, I would like to highlight some
-	practices and results that are non-trivial and might be inspirational
-	for other projects.  I will provide specific examples from work
-	on musical instruments (especially pipe organs), and music sources.
-	Throughout the project, we continuously involved potential end-users
-	for our tools, thus developing not <i>for</i> musicologists, but
-	<i>with</i> musicologists. This end-user involvement resulted in
-	a series of competency questions for the tools and knowledge
-	graphs, which ensured the usefulness of our tools and data for
-	the intended end users.
+	The EU H2020 <a target="_blank" href="https://polifonia-project.eu">Polifonia Project</a>
+	(2021–2024) set as its aim to recreate the connections
+	between music, people, places and events from the sixteenth
+	century to the modern day as an interconnected global
+	database on the web, a knowledge graph. In ten pilot projects
+	and four technology-providing work packages, we took up
+	this challenge. In this talk, I would like to highlight
+	some practices and results that are non-trivial and might
+	be inspirational for other projects.  I will provide specific
+	examples from work on musical instruments (especially pipe
+	organs), and music sources.  Throughout the project, we
+	continuously involved potential end-users for our tools,
+	thus developing not <i>for</i> musicologists, but <i>with</i>
+	musicologists. This end-user involvement resulted in a
+	series of competency questions for the tools and knowledge
+	graphs, which ensured the usefulness of our tools and data
+	for the intended end users.
 
 	Since the project was large, we needed a way to organize the many
 	deliverables. For this, we released the Polifonia Ecosystem, which

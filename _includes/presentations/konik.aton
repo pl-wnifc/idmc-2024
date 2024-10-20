@@ -10,36 +10,36 @@
 @time: 12:30
 @abstract:
 
-	The EU-funded project "Polish Music Heritage in Open Access,"
-	led by the Fryderyk Chopin Institute, digitally preserves
-	and provides free access to Poland’s 16th- to 19th-century
-	musical sources. In collaboration with nine archives, the
-	project digitized over 500,000 pages of music, now accessible
-	at <a target="_blank" href="https://polish.musicsources.pl">polish.musicsources.pl</a>.
-	Additionally, over 7,000 compositions were transcribed into
-	digital scores in the Humdrum format for modern editions,
-	content searchability, and computational analysis, available
-	at <a target="_blank" href="https://polishscores.org">polishscores.org</a>.
+	The EU-funded project "Polish Music Heritage in Open Access",
+	led by the Fryderyk Chopin Institute, aims to digitally
+	preserve and provide free access to Poland’s 16th- to
+	19th-century musical sources. In collaboration with nine
+	archives, the project digitised over 500,000 pages of music,
+	now accessible at https://polish.musicsources.pl.  In
+	addition, over 7,000 compositions were transcribed into
+	digital scores using the Humdrum format, enabling modern
+	editions, content searchability, and computational analysis,
+	available at https://polishscores.org.
 
-	A major focus of the project was producing diplomatic
-	transcriptions that accurately represent original notations,
-	including all historical notational conventions, errors,
-	and idiosyncrasies. To meet the project's ambitious goal
-	of transcribing over 6,000 scores, detailed and specific
-	editorial guidelines had to be developed. The team included
-	specialists in early music, instrumentalists, and conductors.
-	The transcription workflow was managed using a Git-based
-	system that organized files and validated editorial work.
-	Real-time collaboration between editors was facilitated
-	through an online platform where paleographical and editorial
-	issues were discussed.
+	A key focus of the project was producing diplomatic
+	transcriptions that faithfully preserved the original
+	notations, capturing all historical notational conventions,
+	errors, and idiosyncrasies. To meet the ambitious goal of
+	transcribing over 6,000 scores, detailed and specific
+	editorial guidelines had to be developed. The project team
+	included specialists in early music, instrumentalists, and
+	conductors.  The transcription workflow was managed using
+	a Git-based system, which organised files and validated
+	editorial work.  An online platform facilitated real-time
+	collaboration among editors, allowing for discussion of
+	paleographical and editorial issues.
 
-	The digital scores, organized by source archive and available
-	under a CC-BY-4.0 license, are hosted on GitHub and
-	downloadable in multiple formats such as MEI, MusicXML,
-	MIDI, and PDF. This project has greatly enhanced the
-	accessibility of Polish musical heritage for musicians,
-	scholars, and the general public worldwide.
+	The digital scores, organised by source archive and licensed
+	under CC-BY-4.0, are hosted on GitHub and available for
+	download in various formats, including MEI, MusicXML, MIDI,
+	and PDF. This project has significantly improved the
+	accessibility of Polish musical heritage, benefiting
+	musicians, scholars, and the general public worldwide.
 
 @@END: PRESENTATION
 
