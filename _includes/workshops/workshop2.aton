@@ -15,9 +15,9 @@
 	href="https://workspace.google.com/products/sheets">Google
 	Sheets</a>.  This user-friendly approach to data management
 	enables individuals without significant technical expertise to
-	create and collaboratively editable metadata for web-based
+	create and collaboratively edit metadata for web-based
 	applications. We will explore various projects that employ this
-	methodand demonstrate how to export metadata with <a target="_blank"
+	method and demonstrate how to export metadata with <a target="_blank"
 	href="https://developers.google.com/apps-script/overview">Google
 	Apps Scripts</a> to convert worksheets into JSON data.  The
 	JSON data can then be used to dynamically update a webpage
